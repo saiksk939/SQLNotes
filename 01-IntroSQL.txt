@@ -1,0 +1,64 @@
+Database Management Systems (DBMS)
+------------------------------------------------------
+A special software program that helps users create and maintain a database
+	Makes it easy to manage large amounts of information
+	Handles Security
+	Backups
+	Importing/exporting data
+	Concurrency
+	Interacts with software applications 
+
+======================================================================
+Two Types of Databases
+-------------------------------
+Relational Databases (SQV)									Non-Relational (noSQL / not just SQL)
+	Organize data into one or more tables					Organize data is anything but a traditional table
+		Each table has columns and rows						Key-value stores
+		A unique key identifies each row						Documents (JSON, XML, etc)
+																						Graphs
+																						Flexible Tables
+
+==============================================================================
+Structured Query Language (SQL)
+--------------------------------------------
+* SQL is a language used for interacting with Relational Database Management Systems (RDBMS)
+	You can use SQL to get the RDBMS to do things for you
+	Create, retrieve, update & delete data
+	Create & manage databases
+	Design & create database tables
+	Perform administration tasks (security, user management, import/export, etc)
+* SQL implementations vary between systems
+	Not all RDBMS' follow the SQL standard to a 'T'
+	The concepts are the same but the implementation may vary
+
+Structured Query Language (SQL)
+• SQL is actually a hybrid language, it's basically 4 types of languages in one
+Data Query Language (DQL)
+	• Used to query the database for information.
+	• Get information that is already stored there
+Data Definition Language (DDL)
+	• Used for defining database schemas.
+Data Control Language (DCL)
+	• Used for controlling access to the data in the database.
+	• User & permissions management
+Data Manipulation Language (DML)
+	• Used for inserting, updating and deleting data from the database
+=======================================================================================
+Some of The Most Important SQL Commands:
+-----------------------------------------------------------
+* SELECT - extracts data from a database
+* UPDATE - updates data in a database
+* DELETE - deletes data from a database
+* INSERT INTO - inserts new data into a database
+* CREATE DATABASE - creates a new database
+* ALTER DATABASE - modifies a database
+* CREATE TABLE - creates a new table
+* ALTER TABLE - modifies a table
+* DROP TABLE - deletes a table
+* CREATE INDEX - creates an index (search key)
+* DROP INDEX - deletes an index
+
+SELECT Statement
+-------------------------
+The SELECT statement is used to select data from a database.
+The data returned is stored in a result table, called the result-set.    

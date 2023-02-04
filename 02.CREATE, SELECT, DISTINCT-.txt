@@ -1,0 +1,86 @@
+[CREATE, DROP, USE, DESCRIBE, INSERT,  SELECT, DISTINCT, COUNT, SUM, AVG]
+CREATE DATABASE:
+--------------------------
+To create database
+syntax: create database (database name);
+Ex: create database diamond;
+
+DROP:
+-------
+To delete database
+syntax: drop database (database name);
+Ex: drop database diamond;
+
+USE:
+------
+To Use the database
+syntax: use (database name);
+Ex:use diamond;
+
+CREATE TABLE:
+--------------------
+To create table
+syntax: create table emp();
+Ex: create table emp2(Name varchar(20), Age int, Sex char(1), DOB date, City varchar(15), Salary float); 
+
+SHOW TABLES:
+--------------------
+To show tables
+syntax: show tables;
+Ex: show tables;
+
+SELECT:
+----------
+To show all entire table 
+syntax: select * from (table name);
+Ex: select * from emp;
+
+DESCRIBE:
+--------------
+To describe the table
+syntax: describe (table name);
+Ex: describe emp2;
+
+INSERT:
+----------
+To insert data into table
+syntax: insert into (table name) values();
+Ex: insert into emp2 values
+	("Jimmy", 25, "M", "1999-08-25", "Hyderabad", 10000),
+	("Divya", 28, "F", "1997-11-12", "Mumbai", 60000),
+	("Jhansi", 22, "F", "1998-06-24", "Delhi", 30000),
+	("Babu", 29, "M", "1999-02-15", "Bangalore", 50000);
+	
+To show only specific columns from table
+syntax: select (column 1),  (column 2), from (table name);
+Ex: select Name, city from emp2;
+
+SELECT Distinct and COUNT:
+-------------------------------------
+To show unique values like removing duplicates from table column
+syntax: select distinct (column name) from (table name);
+Ex: select distinct city from emp
+
+To show number of distinct rows in column from table
+syntax: select count(distinct (column name)) from (table name);
+Ex: select count(distinct city) from emp2;
+
+To show number of rows in column from table
+syntax: select count(column name) from (table name);
+Ex: select count(city) from emp2;
+
+To show number of rows in column as alias from table
+syntax: select count(column name) as (alias name) from (table name);
+Ex: select count(name) as count_name from emp2;
+
+SUM
+-------
+To calculate total sum of salary's in the column
+syntax: select sum(column name) from (table name);
+Ex: select sum(salary) from emp2;
+
+AVG
+------
+To calculate avg of salary's in the column
+syntax: select avg(column name) from (table name);
+Ex: select avg(salary) from emp2;

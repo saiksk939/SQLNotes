@@ -1,0 +1,26 @@
+[WHERE, OR, IN,  ]
+
+WHERE
+-----------
+To apply where condition of specific age
+syntax: select column1, column2, ... from table_name where condition;
+Ex: select * from emp2 where age>25;
+
+To show specific location in the city column
+syntax: select column1, column2, ... from table_name where condition;
+Ex: select * from emp2 where city="bangalore";
+
+To show specific gender in the sex column
+syntax: select column1, column2, ... from table_name where condition;
+Ex: select name, sex, city from emp2 where sex="F";
+
+OR
+-----
+To show specific locations in column using WHERE, OR
+syntax: SELECT column1, column2, ... FROM table_name WHERE condition1 OR condition2 OR condition3 ...;
+Ex: select * from emp2 where city="delhi" or city="hyderabad";
+
+To show specific locations in column using WHERE, IN
+syntax: SELECT * FROM table_name WHERE column IN (condition);
+Ex: select * from emp2 where city in ("delhi","hyderabad");
+
