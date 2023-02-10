@@ -1,0 +1,72 @@
+[WHERE, OR, IN, BETWEEN, AND, GROUP BY,  ORDER BY, DESC ]
+
+WHERE
+-----------
+To apply where condition of specific age
+syntax: select column1, column2, ... from table_name where condition;
+Ex: select * from emp2 where age>25;
+
+To show specific location in the city column
+syntax: select column1, column2, ... from table_name where condition;
+Ex: select * from emp2 where city="bangalore";
+
+To show specific gender in the sex column
+syntax: select column1, column2, ... from table_name where condition;
+Ex: select name, sex, city from emp2 where sex="F";
+
+OR
+-----
+To show specific locations in column using WHERE, OR
+syntax: SELECT column1, column2, ... FROM table_name WHERE condition1 OR condition2 OR condition3 ...;
+Ex: select * from emp2 where city="delhi" or city="hyderabad";
+
+IN
+---
+To show specific locations in column using WHERE, IN
+syntax: SELECT * FROM table_name WHERE column IN (condition);
+Ex: select * from emp2 where city in ("delhi","hyderabad");
+
+BETWEEN
+--------------
+To show between range
+syntax: select * from table_name WHERE column BETWEEN 'condition1' and 'condition2';
+Ex: select * from emp2 where DOB between "1996-01-01" and "1998-12-31";
+
+AND
+------
+To specify two conditions using AND
+syntax: SELECT column1, column2, ... FROM table_name WHERE condition1 AND condition2 AND condition3 ...;
+Ex: select * from emp2 where age>25 and sex="F";
+
+GROUP BY
+--------------
+To specify total salary and GROUP BY sex
+syntax: select sex, sum(column) as alias_name from table_name  group by column;
+Ex: select sex, sum(salary) as total_salary from emp2 group by sex;
+
+NOT
+------
+It doesn't show the specified column
+syntax: select * from table_name where not condition;
+Ex: select * from emp2 where not city="Hyderabad";
+
+AND, NOT
+-------------
+It doesn't show the specified column
+syntax: select * from table_name where not codition1 and not condition2;
+Ex: select * from emp2 where not city="hyderabad" and not city="delhi";
+
+ORDER BY, DESC
+-----------------------
+To show the results in order vice low to high order or increasing order
+syntax: select * from table_name ORDER BY  column; 
+Ex: select * from emp2 order by salary;
+
+It orders by City, but if some rows have the same City, it orders them by Name
+syntax: select * from table_name order by column1, column2; 
+Ex: select * from emp2 order by city, name;
+
+To show the results in order vice high to low order or decreasing order
+syntax: select * from table_name ORDER BY  column DESC; 
+Ex: select * from emp2 order by salary desc; 
+

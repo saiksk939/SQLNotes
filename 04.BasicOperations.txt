@@ -1,0 +1,54 @@
+[LENGTH, REPEAT, UPPER, LOWER, CURDATE, DAY, NOW, NULL, NOT  NULL, UPDATE]
+Basic Operations 
+
+To adding numbers
+Ex:select (10+20) as adding;
+
+To subtract numbers
+Ex: select (10-20) as subtract;
+
+LENGTH
+------------
+To show no of characters 
+Ex: select length("Hello") as total_len;
+
+REPEAT
+----------
+To repeat something
+Ex: select repeat("Hello",10);
+
+UPPER, LOWER
+---------------------
+To show in upper case (or) lower case
+Ex: select upper("hello");
+Ex: select lower('HELLO');
+
+CURDATE
+-------------
+To show current date
+Ex: select curdate();
+
+DAY
+------
+To show only date
+Ex: select day(curdate());
+
+NOW
+-------
+To show current date and time
+Ex: select now();
+
+NULL, NOT NULL
+-----------------------
+The IS NULL operator is used to test for empty values (NULL values).
+The IS NOT NULL operator is used to test for non-empty values (NOT NULL values).
+syntax: SELECT column_names FROM table_name WHERE column_name IS NULL;
+syntax: SELECT column_names FROM table_name WHERE column_name IS NOT NULL;
+Ex: select * from emp2 where city is null;
+Ex: select * from emp2 where city is not null;
+
+UPDATE
+-----------
+To modify data in the table 
+syntax: update table_name set column1=value1, column2=value2 where conditon;
+Ex: update emp2 set name="Jhon", city="Kolkata" where s_no=5;

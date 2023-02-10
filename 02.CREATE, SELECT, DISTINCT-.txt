@@ -1,4 +1,4 @@
-[CREATE, DROP, USE, DESCRIBE, INSERT,  SELECT, DISTINCT, COUNT, SUM, AVG]
+[CREATE, DROP, DROP TABLE, USE, DESCRIBE, INSERT,  SELECT, DISTINCT, COUNT, SUM, AVG, ALTER]
 CREATE DATABASE:
 --------------------------
 To create database
@@ -10,6 +10,12 @@ DROP:
 To delete database
 syntax: drop database (database name);
 Ex: drop database diamond;
+
+DROP TABLE
+------------------
+To delete Table
+syntax: drop table table_name;
+Ex: drop table emp;
 
 USE:
 ------
@@ -84,3 +90,13 @@ AVG
 To calculate avg of salary's in the column
 syntax: select avg(column name) from (table name);
 Ex: select avg(salary) from emp2;
+
+ALTER
+---------
+to add new column in table
+syntax: alter table table_name add colum_name type:
+Ex: alter table emp2 add s_no int;
+
+To delete entire column 
+syntax: alter table table_name drop column_name;
+Ex: alter table emp2 drop s_no;

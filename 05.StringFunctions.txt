@@ -1,0 +1,10 @@
+String Functions
+----------------------
+[CONCAT, ]
+To show length of the name 
+Ex:select name, character_length(name) as total_len from emp2;
+
+CONCAT
+-----------
+Ex: select concat("This ","is ","SQL ","class") as merged;
+
